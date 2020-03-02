@@ -80,11 +80,11 @@ button, input[type="submit"], input[type="reset"] {
     display: grid;
     gap: 1rem;
     border-top:15px solid  #17E8E5;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 400px auto ;
     grid-template-rows: 300px auto auto;
     grid-template-areas:
-    "sidebar content-1 content-2 content-3"
-    "sidebar content-4 content-5 content-6";
+    "sidebar featured-items"
+    "sidebar new-arrivals";
     
 }
 .aside {
@@ -94,7 +94,7 @@ button, input[type="submit"], input[type="reset"] {
     grid-column-end: span;
     /* border-right: 1px solid #17E8E5; */
     font-family: 'Roboto';
-    background-image: url('../images/bkcg.jpg');  
+    /* background-image: url('../images/bkcg.jpg');   */
     
 }
 .banner{
@@ -114,4 +114,9 @@ button, input[type="submit"], input[type="reset"] {
     font-size: 40px;
     width: 286px;
     text-align: center;
+}
+.featured-products{
+}
+.featured-products .grid-item, .new-products .grid-item{
+    display:inline-block;
 }
