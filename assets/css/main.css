@@ -1,0 +1,111 @@
+*{
+    margin: 0 auto;
+    padding:0;
+}
+body{
+    margin:10px;
+    font-family: 'Bubblegum Sans'
+}
+.nav li,.side-menu  li{
+    list-style-type:none;
+    display: inline;
+}
+.nav ul li:hover{
+    background-color: #b0dbf7;
+    font-size:27x;
+}
+.nav ul li:nth-child(1):active{
+ background-color: #C994FF;
+}
+.nav ul li:nth-child(2):active{
+ background-color: #FFEBA1;
+}
+
+.nav ul li:nth-child(3):active{
+    background-color: #87EB84;
+}
+.nav ul{
+    padding-top:38px;
+}
+.logo{
+    max-width: 100px;
+}
+.logo img {
+    max-width: 100%;
+}
+#header{
+  font-family: 'Bubblegum Sans';
+  font-size:25px;
+  display:flex;
+  background-color:#CEEDFF;
+
+}
+li a{
+    margin: 10px;
+}
+.side-menu{
+    float: right;
+    margin-right: 12px;
+    margin-top: 20px;
+}
+
+.icon {
+    width:10px;
+    display: inline-block;
+}
+.icon-shopping-cart{
+    background-image: url('../images/sprites/cartSprite.jpg');
+}
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.loginButton{
+    background-color: crimson;
+    color:#eee;
+    padding:10px;
+    margin:10px;
+}
+#main-content{
+    /*background-image: url('../images/pageBackground.jpg');*/ 
+    padding: 10px 0;
+    background-position: bottom;
+    display: grid;
+    gap: 1rem;
+    border-top:15px solid  #17E8E5;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px auto auto;
+    grid-template-areas:
+    "banner banner banner" 
+    "sidebar content-1 content-2"
+    "sidebar content-3 content-4";
+    
+}
+.aside {
+    grid-area: sidebar;
+    border-radius:10px;
+    border: 1px solid #17E8E5;
+    font-family: 'Roboto';
+    padding:10px;
+}
+.banner{
+    grid-area: banner;
+    width:100%;
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom:15px solid #c994FF;
+}
+.bannerText{
+    position: absolute;
+    left: 359px;
+    top: 293px;
+    font-family: 'Flavors';
+    font-size: 40px;
+    width: 286px;
+}
