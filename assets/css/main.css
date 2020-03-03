@@ -84,13 +84,22 @@ button, input[type="submit"], input[type="reset"] {
     display: grid;
     gap: 1rem;
     border-top:15px solid  #f8cd4a;
-    grid-template-columns: 400px auto ;
-    grid-template-rows: 300px auto auto;
+    grid-template-columns: 400px 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
     grid-template-areas:
     "sidebar featured-items"
-    "sidebar new-arrivals";
-    background-image: url('../images/bkcg.jpg');
+    "sidebar new-arrivals"
+    "donation-banner donation-banner";
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
     
+}
+.addtoCartButton{
+    background-color:crimson;
+    color:#eee;
+    display: inline-block;
+    font-size: 8px;
+    border-radius: 7%;
+    padding: 2px;
 }
 .aside {
     height: 100%;
@@ -109,6 +118,29 @@ button, input[type="submit"], input[type="reset"] {
     background-repeat: no-repeat;
     background-position: center;
 }
+.donation-banner{
+    background-color: #e3596b;
+    width: 100%;
+    overflow: auto;
+}
+.item-price{
+    width: 82%;
+    float: left;
+
+}
+
+.grid-item{
+    width: 46%;
+    margin: 10px;
+}
+.grid-item img{
+    width:30%;
+}
+
+.loginButton{
+    float: right;
+    border-radius:70px;
+}
 .bannerText{
     position: absolute;
     left: 625px;
@@ -118,13 +150,24 @@ button, input[type="submit"], input[type="reset"] {
     width: 286px;
     text-align: center;
 }
+
 .aside-item {
     font-family: 'Comic Sans MS';
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.featured-products{
-}
+
 .featured-products .grid-item, .new-products .grid-item{
     display:inline-block;
+}
+.featured-products{
+    margin-bottom: 15px;
+}
+#footer {
+    background-color: #f8cd4a;
+    color:#eee;
+    text-align: center;
+}
+#footer * {
+    display: block;
 }
