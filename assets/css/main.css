@@ -90,7 +90,7 @@ button, input[type="submit"], input[type="reset"] {
     "sidebar featured-items"
     "sidebar new-arrivals"
     "donation-banner donation-banner";
-    /* background-image: linear-gradient(to bottom right, red, yellow); */
+    background-image: linear-gradient(to right, #dcdcdc, #919191);
     
 }
 .addtoCartButton{
@@ -103,11 +103,12 @@ button, input[type="submit"], input[type="reset"] {
 }
 .aside {
     height: 100%;
-    margin-top: 10px;
+    margin-top: 75px;
     grid-area: sidebar;
     grid-column-end: span;
     /* border-right: 1px solid #17E8E5; */
     font-family: 'Comic Sans MS';
+    margin-left: 0;
 }
 .banner{
     border-top:15px solid #e3596b;
@@ -117,10 +118,12 @@ button, input[type="submit"], input[type="reset"] {
     background-image: url('../images/banner.jpg');
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #fffdfb;
 }
 .donation-banner{
-    background-color: #e3596b;
+    background-color: #CEEDFF;
     width: 100%;
+    text-align: center;
     overflow: auto;
 }
 .item-price{
@@ -164,10 +167,13 @@ button, input[type="submit"], input[type="reset"] {
     margin-bottom: 15px;
 }
 #footer {
-    background-color: #f8cd4a;
+    background-color: #e3596b;
     color:#eee;
     text-align: center;
 }
-#footer * {
-    display: block;
+#footer li{
+    list-style-type:none;
+    margin-top:10px;
+    display: inline;
 }
+
