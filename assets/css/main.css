@@ -84,11 +84,11 @@ button, input[type="submit"], input[type="reset"] {
     display: grid;
     gap: 1rem;
     border-top:15px solid  #f8cd4a;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 400px auto ;
     grid-template-rows: 300px auto auto;
     grid-template-areas:
-    "sidebar content-1 content-2 content-3"
-    "sidebar content-4 content-5 content-6";
+    "sidebar featured-items"
+    "sidebar new-arrivals";
     background-image: url('../images/bkcg.jpg');
     
 }
@@ -122,4 +122,9 @@ button, input[type="submit"], input[type="reset"] {
     font-family: 'Comic Sans MS';
     margin-top: 50px;
     margin-bottom: 50px;
+}
+.featured-products{
+}
+.featured-products .grid-item, .new-products .grid-item{
+    display:inline-block;
 }
