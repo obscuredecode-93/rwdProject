@@ -4,25 +4,25 @@
 }
 body{
     margin:10px;
-    font-family: 'Bubblegum Sans'
+    font-family: 'Comic Sans MS';
 }
 .nav li,.side-menu  li{
     list-style-type:none;
     display: inline;
 }
 .nav ul li:hover{
-    background-color: #b0dbf7;
+    background-color: #f8cd4a;
     font-size:27x;
 }
 .nav ul li:nth-child(1):active{
- background-color: #C994FF;
+ background-color: #CEEDFF;
 }
 .nav ul li:nth-child(2):active{
- background-color: #FFEBA1;
+ background-color: #CEEDFF;
 }
 
 .nav ul li:nth-child(3):active{
-    background-color: #87EB84;
+    background-color: #CEEDFF;
 }
 .nav ul{
     padding-top:38px;
@@ -34,14 +34,14 @@ body{
     max-width: 100%;
 }
 #header{
-  font-family: 'Bubblegum Sans';
+  font-family: 'Comic Sans MS';
   font-size:25px;
   display:flex;
   background-color:#CEEDFF;
 
 }
 li a{
-    margin: 10px;
+    margin: 30px;
 }
 .side-menu{
     float: right;
@@ -49,7 +49,7 @@ li a{
     margin-top: 20px;
 }
 .container{
-    /* background-image: url('../images/bkcg.jpg');   */
+    /* background-image: url('../images/bkcg.jpg');*/   
 
 }
 .icon {
@@ -69,22 +69,27 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 .loginButton{
-    background-color: crimson;
+    background-color: #e3596b;
     color:#eee;
     padding:10px;
     margin:10px;
+    margin-right:120px;
+}
+.loginButton:active{
+    background-color: #f8cd4a;
 }
 #main-content{
     padding: 10px 10%;
     background-position: bottom;
     display: grid;
     gap: 1rem;
-    border-top:15px solid  #17E8E5;
+    border-top:15px solid  #f8cd4a;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px auto auto;
     grid-template-areas:
     "sidebar content-1 content-2 content-3"
     "sidebar content-4 content-5 content-6";
+    background-image: url('../images/bkcg.jpg');
     
 }
 .aside {
@@ -93,12 +98,10 @@ button, input[type="submit"], input[type="reset"] {
     grid-area: sidebar;
     grid-column-end: span;
     /* border-right: 1px solid #17E8E5; */
-    font-family: 'Roboto';
-    background-image: url('../images/bkcg.jpg');  
-    
+    font-family: 'Comic Sans MS';
 }
 .banner{
-    border-top:15px solid #c994FF;
+    border-top:15px solid #e3596b;
     grid-area: banner;
     width:100%;
     height:300px;
@@ -109,9 +112,14 @@ button, input[type="submit"], input[type="reset"] {
 .bannerText{
     position: absolute;
     left: 625px;
-    top: 287px;
-    font-family: 'Flavors';
-    font-size: 40px;
+    top: 293px;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
     width: 286px;
     text-align: center;
+}
+.aside-item {
+    font-family: 'Comic Sans MS';
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
