@@ -30,10 +30,10 @@ body{
     padding-top:6%; /* 6/100 = 6 percent of header*/
 }
 .logo{
-    max-width: 6%; /* 6/100 = 6 percent of header*/
+    max-width: 100px; /* 6/100 = 6 percent of header*/
 }
 .logo img {
-    max-width: 100%; /* 100/100 = 100 percent of logo*/
+    max-width: 100%;
 }
 #header{
   font-family: 'Comic Sans MS';
@@ -80,7 +80,7 @@ button, input[type="submit"], input[type="reset"] {
     background-position: bottom;
     display: grid;
     gap: 1rem;
-    border-top:1% solid  #f8cd4a; /* a slight 1% border */
+    border-top:15px solid  #f8cd4a; /* a slight 1% border */
     grid-template-columns: 400px 1fr; /* This height will be fixed */
     grid-auto-rows: minmax(min-content, max-content);
     grid-template-areas:
@@ -170,12 +170,18 @@ button, input[type="submit"], input[type="reset"] {
     list-style-type:none;
     display: inline;
 }
+.donate-button{
+    margin:10px;
+}
 
 /** Media Queries **/
 
 @media only screen and (max-width:414px){
     .banner{
         display: none;
+    }
+    .logo {
+
     }
     #main-content{
         display: block;
@@ -200,5 +206,20 @@ button, input[type="submit"], input[type="reset"] {
     }
     .aside{
         display: none;
+    }
+}
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+    #main-content{
+        grid-template-columns: 225px 1fr;
+    }
+    .loginButton{
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .bannerText{
+        top:57%;
+        width:28%;
     }
 }
