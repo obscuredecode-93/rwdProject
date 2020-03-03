@@ -177,3 +177,34 @@ button, input[type="submit"], input[type="reset"] {
     display: inline;
 }
 
+/** Media Queries **/
+
+@media only screen and (max-width:414px){
+    .banner{
+        display: none;
+    }
+    #main-content{
+        display: block;
+    }
+    .grid-item img{
+        width: 200px;
+    }
+    .nav{
+        display: none;
+    }
+    .loginButton{
+        margin-right: 0;
+    }
+    .addtoCartButton{
+        display: inherit;
+    }
+    .item-price{
+        width:54%
+    }
+    .grid-item{
+        width: 100%;
+    }
+    .aside{
+        display: none;
+    }
+}
